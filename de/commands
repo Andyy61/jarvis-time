@@ -1,0 +1,4 @@
+*wie viel uhr*==say "Es ist $( [ $pg_time_format -eq  12 ] && date +"%l"  || date +"%k") "Uhr" $(date +"%-M")"
+*wie spät*==say "Es ist $( [ $pg_time_format -eq  12 ] && date +"%l"  || date +"%k") "Uhr" $(date +"%-M")"
+*uhrzeit*==say "Es ist $( [ $pg_time_format -eq  12 ] && date +"%l"  || date +"%k") "Uhr" $(date +"%-M")"
+*welcher tag * heute*==say "Heute ist der $(LC_TIME="$language.UTF-8" date +"%A %d %B %Y")"
